@@ -39,9 +39,7 @@ The warehouse has **8 dimension tables and 3 fact tables**.
 
 Each dimension carries a numeric key (for example `ProductNum`, `CustomerNum`) next to the source identifier (`ProductID`, `CustomerID`).
 
-### Relationship validation
 
-A SQL check of orphan foreign-key values across **13 fact-to-dimension relationships** returned `OrphanRows = 0` for every relationship, and candidate key columns were unique and non-null. This validates the key values; it does not by itself prove that SQL Server `FOREIGN KEY` constraints are defined.
 
 ---
 
@@ -77,8 +75,6 @@ All pages have navigation buttons and a Clear Filters button.
 ---
 
 ## Key Insights
-
-Findings read from the dashboard (descriptive; they describe the simulated dataset):
 
 1. **Top-selling country:** Saudi Arabia recorded the highest sales over the ten-year period among the top five countries displayed, narrowly ahead of Canada and Australia.
 2. **Best-selling category:** Electronics was the best-selling product category, ahead of Fashion.
