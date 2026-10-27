@@ -1,7 +1,7 @@
 E-commerce Data Warehouse | SQL Server, SSIS & Power BI
 ---
 
-An end-to-end analytics project for a fictional e-commerce company : ten years of **synthetic** sales, customer, product, inventory and returns data cleaned in Power Query, stored in SQL Server, loaded into a dimensional data warehouse with **SSIS**, and reported in a three-page **Power BI** dashboard.
+An end to end analytics project for an e-commerce company, covering ten years of sales, customer, product, inventory, and returns data. The data was cleaned in Power Query, stored in SQL Server, loaded into a dimensional data warehouse using SSIS, and presented in a three-page Power BI dashboard..
 ---
 
 ## Project Objectives
