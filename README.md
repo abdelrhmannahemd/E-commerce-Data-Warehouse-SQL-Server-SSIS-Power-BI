@@ -48,17 +48,16 @@ Each dimension carries a numeric key (for example `ProductNum`, `CustomerNum`) n
 The package shown above uses an **OLE DB Source**, a chain of nine **Lookup** transformations connected through *Lookup Match Output*, and an **OLE DB Destination**. Lookups match incoming rows against dimension tables to retrieve the dimension keys stored in the fact table.
 
 
-## SQL Analysis and Validation
+## SQL Analysis
 
 SQL Server was used to explore the warehouse, validate it and investigate data quality.
 
 - **Aggregations:** `SUM()`, `COUNT()`, `AVG()`, `GROUP BY`, `HAVING`
 - **Joins:** combining facts and dimensions, finding unmatched records
 - **Subqueries:** nested analysis and comparisons
-- **Window functions:** `ROW_NUMBER()` and `RANK()` for ranking and de-duplication
-- **Validation:** orphan foreign keys, duplicate keys, distinct orders, products below reorder level, product names shared by several products
+- **Window functions:** `ROW_NUMBER()` and `RANK()` for ranking 
 
----
+--
 
 ## Power BI Report
 
