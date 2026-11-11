@@ -12,6 +12,25 @@ An end to end analytics project for an e-commerce company, covering ten years of
 - Analyse sales, profit, customers, inventory and returns in Power BI with DAX measures.
 
 
+## Data Cleaning & Quality Review
+
+Before building the data warehouse, I performed an initial data cleaning process to identify and fix data issues, missing values, duplicate records, and unusual values across the e-commerce datasets.
+
+The main tasks included:
+
+- **Handling Missing Values:** Identified and investigated missing data, including 4,084 missing values in the `TaxAmount` column.
+- **Duplicate Detection:** Identified and removed duplicate records, including 14,715 duplicate records from the Returns dataset.
+- **Handling Negative Values:** Identified 4,084 negative values in the `DiscountPercent` column and replaced them with 0 to maintain valid discount values.
+- **Outlier Detection Using IQR:** Applied the Interquartile Range (IQR) method to detect potential outliers in numerical columns such as `SellingPrice`, `Quantity`, and `UnitPrice`.
+- **Quantity Outlier Analysis:** Identified 2,042 records with `Quantity` values above the calculated upper IQR boundary.
+- **Price Validation:** Reviewed unusual and unrealistic product prices and corrected 17 records.
+- **Negative Cost Validation:** Identified products with negative costs and excluded 20 affected products from the analysis.
+- **Country Name Standardization:** Corrected misspelled country names and standardized naming conventions to prevent the same country from appearing under multiple names, resolving duplicate country entries.
+- **Product Category Standardization:** Standardized product category names to ensure consistency across the datasets.
+
+These steps helped improve data accuracy, consistency, and reliability before moving forward with the SQL Server database, ETL pipeline, and dimensional data warehouse.
+
+
 ## Data Warehouse Design
 
 The warehouse has **8 dimension tables and 3 fact tables**.
